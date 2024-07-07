@@ -35,9 +35,10 @@ nav,
 }
 
 nav {
+  
   justify-content: space-around;
   align-items: center;
-  height: 13vh;
+  height: 10vh;
 }
 
 .nav-links {
@@ -172,51 +173,45 @@ section {
 
 #profile {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 5rem;
   height: 80vh;
+  text-align: center;
+  color: #ffffff; /* 设置文本颜色 */
+  padding: 0;
 }
 
 .section__pic-container {
-  display: flex;
-  height: 100px;
-  width: 100px;
-  margin: auto 0;
+  height: 170px; /* 头像高度 */
+  width: 170px; /* 头像宽度 */
+  margin-bottom: 0.25rem; /* 头像与文本间距 */
 }
 
 .section__pic-container img {
   height: 100%;
-  width: auto; 
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  width: auto;
+  border-radius: 50%; /* 圆形图片 */
 }
 
 .title {
-  font-size: 3rem;
-  text-align: center;
+  padding-top: 0.5rem;
+  color: #000000; /* 设置标题颜色为黑色 */
+  font-size: 1.5rem; /* 标题字体大小 */
+  margin-bottom: 0.75rem; /* 标题与名字间距 */
+}
+
+.name {
+  font-size: 1rem; /* 名字字体大小 */
+  margin-bottom: 0.5rem; /* 名字与社交图标间距 */
 }
 
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
   gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; /* 社交图标与按钮间距 */
 }
 
 /* ICONS */
@@ -225,6 +220,7 @@ section {
   cursor: pointer;
   height: 2rem;
 }
+
 
 /* BUTTONS */
 
@@ -237,9 +233,9 @@ section {
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .btn-color-1,
@@ -317,16 +313,6 @@ section {
     text-align: center;
 }
   
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
-  
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -398,11 +384,10 @@ article .icon {
   
 /* FOOTER SECTION */
 footer {
-  height: 26vh;
+  height: 10vh;
   margin: 0 1rem;
 }
 
 footer p {
     text-align: center;
-    margin-bottom: 0.5rem;
 }
